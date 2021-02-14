@@ -34,8 +34,20 @@
 <style lang="scss" scoped>
 
     .header {
-        background: url("/eagle.png") center center no-repeat;
+        background: url("./eagle1.png") center center no-repeat;
         height: 100vh;
+        position: relative;
+
+        &::before {
+            display: block;
+            content: "";
+            background: linear-gradient(#f38181 0%, #fce38a 100%);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.9;
+
+        }
 
         &__container {
             display: flex;
@@ -44,6 +56,7 @@
             height: 100%;
             width: 1200px;
             margin: 0 auto;
+            position: relative;
         }
     
         &__top {
@@ -88,28 +101,28 @@
         &__icon {
             
             &-cart {
-                background: url("/cart.png") center center no-repeat;
+                background: url("./cart.png") center center no-repeat;
                 display: block;
                 width: 18px;
                 height: 18px;
 
                 &:hover {
                     background: #fce38a;
-                    -webkit-mask: url("/cart.png") center center no-repeat;
-                    mask: url("/cart.png") center center no-repeat;
+                    -webkit-mask: url("./cart.png") center center no-repeat;
+                    mask: url("./cart.png") center center no-repeat;
                 }
             }
 
             &-search {
-                background: url("/search.png") center center no-repeat;
+                background: url("./search.png") center center no-repeat;
                 display: block;
                 width: 18px;
                 height: 18px;
 
                 &:hover {
                     background: #fce38a;
-                    -webkit-mask: url("/search.png") center center no-repeat;
-                    mask: url("/search.png") center center no-repeat;
+                    -webkit-mask: url("./search.png") center center no-repeat;
+                    mask: url("./search.png") center center no-repeat;
                 }
             }
             
