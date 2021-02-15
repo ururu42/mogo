@@ -81,17 +81,24 @@
                     font-size: 14px;
                     position: relative;
                     text-transform: uppercase;
+                    transition: all 0.2s ease-in;
+
+                    &::after {
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        border-bottom: 3px solid #fce38a;
+                        width: 100%;
+                        margin-top: 10px;
+                        opacity: 0;
+                        transition: opacity 0.2s ease-in;
+                    }
                     
                     &:hover {
                         color: #fce38a;
 
                         &::after {
-                            display: block;
-                            content: '';
-                            position: absolute;
-                            border-bottom: 3px solid #fce38a;
-                            width: 100%;
-                            margin-top: 10px;
+                            opacity: 1;
                         }
                     }
                 }
@@ -101,28 +108,29 @@
         &__icon {
             
             &-cart {
-                background: url("./cart.png") center center no-repeat;
+                background: #fff;
                 display: block;
                 width: 18px;
                 height: 18px;
+                -webkit-mask: url("./cart.png") center center no-repeat;
+                mask: url("./cart.png") center center no-repeat;
 
                 &:hover {
                     background: #fce38a;
-                    -webkit-mask: url("./cart.png") center center no-repeat;
-                    mask: url("./cart.png") center center no-repeat;
                 }
             }
 
             &-search {
-                background: url("./search.png") center center no-repeat;
+                background:  #fff;
                 display: block;
                 width: 18px;
                 height: 18px;
+                -webkit-mask: url("./search.png") center center no-repeat;
+                mask: url("./search.png") center center no-repeat;
 
                 &:hover {
                     background: #fce38a;
-                    -webkit-mask: url("./search.png") center center no-repeat;
-                    mask: url("./search.png") center center no-repeat;
+                    
                 }
             }
             
@@ -164,6 +172,7 @@
                 outline: none;
                 text-transform: uppercase;
                 cursor: pointer;
+                transition: all 0.2s ease-in;
 
                 &:hover {
                     color: #fce38a;
@@ -224,19 +233,24 @@
                     height: 100%;
                     border-top: 3px solid rgba(255, 255, 255, 0.5);
                     padding-top: 11px;
+                    
+                    &::before {
+                        display: block;
+                        content: "";
+                        width: 0px;
+                        height: 3px;
+                        background: #f38181;
+                        position: absolute;
+                        top: -3px;
+                        transition: width 0.2s ease-in;
+                    }
 
                     &:hover {
                         color: #ffffff;
                         border-top: 3px solid rgba(255, 255, 255, 1);
                         
                         &::before {
-                            display: block;
-                            content: "";
                             width: 70px;
-                            height: 3px;
-                            background: #f38181;
-                            position: absolute;
-                            top: -3px;
                         }
                     }
                 }
