@@ -7,25 +7,25 @@
             <ul class='story__foto'>
                 <li>
                     <a href='#'>
-                        <img src="~assets/images/story1.jpg" />
+                        <img src="./story1.jpg" />
                         <span>
-                            <img src="~assets/images/story-icon.png" />Super team
+                            <img src="./story-icon.png" />Super team
                         </span>
                     </a>
                 </li>
                 <li>
                     <a href='#'>
-                        <img src="~assets/images/story2.jpg" />
+                        <img src="./story2.jpg" />
                         <span>
-                            <img src="~assets/images/story-icon.png" />Super team
+                            <img src="./story-icon.png" />Super team
                         </span>
                     </a>
                 </li>
                 <li>
                     <a href='#'>
-                        <img src="~assets/images/story3.jpg" />
+                        <img src="./story3.jpg" />
                         <span>
-                            <img src="~assets/images/story-icon.png" />Super team
+                            <img src="./story-icon.png" />Super team
                         </span>
                     </a>
                 </li>
@@ -46,7 +46,7 @@
             justify-content: space-between;
             width: 1200px;
             margin: 0 auto;
-            align-items: center;  
+            align-items: center;
         }
 
         &__title {
@@ -81,12 +81,12 @@
             font-weight: 400;
             text-align: center;
             color: #999999;
-            margin-bottom: 99px;     
+            margin-bottom: 99px;
             line-height: 24px;
             display: block;
             max-width: 960px;
         }
-        
+
         &__foto {
             display: flex;
             justify-content: space-between;
@@ -102,7 +102,7 @@
                     position: relative;
                     display: flex;
                     transition: transform 0.2s ease-in;
- 
+
                     & > img {
 
                     }
@@ -128,7 +128,7 @@
                         img {
                             margin-bottom: 6px;
 
-                        }      
+                        }
                     }
 
                     &:hover {

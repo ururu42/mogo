@@ -58,7 +58,7 @@
             margin: 0 auto;
             position: relative;
         }
-    
+
         &__top {
             margin: 0;
             display: flex;
@@ -93,7 +93,7 @@
                         opacity: 0;
                         transition: opacity 0.2s ease-in;
                     }
-                    
+
                     &:hover {
                         color: #fce38a;
 
@@ -106,7 +106,7 @@
         }
 
         &__icon {
-            
+
             &-cart {
                 background: #fff;
                 display: block;
@@ -130,10 +130,10 @@
 
                 &:hover {
                     background: #fce38a;
-                    
+
                 }
             }
-            
+
             a {
 
                 &:hover {
@@ -151,7 +151,7 @@
             margin-right: auto;
 
             a {
-                font-size: 30px !important; 
+                font-size: 30px !important;
                 text-transform: initial !important;
             }
         }
@@ -160,7 +160,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            
+
             button {
                 padding: 0 30px;
                 height: 40px;
@@ -219,11 +219,11 @@
                 font-size: 24px;
                 font-weight: 700;
                 color: #ffffff;
-                
+
                 &:last-child {
                     margin-right: 0;
                 }
-                
+
                 a {
                     text-decoration: none;
                     color: rgba(255, 255, 255, 0.7);
@@ -233,7 +233,8 @@
                     height: 100%;
                     border-top: 3px solid rgba(255, 255, 255, 0.5);
                     padding-top: 11px;
-                    
+                    transition: all 0.2s ease-in;
+
                     &::before {
                         display: block;
                         content: "";
@@ -248,7 +249,7 @@
                     &:hover {
                         color: #ffffff;
                         border-top: 3px solid rgba(255, 255, 255, 1);
-                        
+
                         &::before {
                             width: 70px;
                         }
